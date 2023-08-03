@@ -69,8 +69,8 @@ namespace CalculadoraForms
 
         public double Limpa(double num) 
         {
-
-            return 0;
+            ConsultarOperacao = 0;
+            return num = 0;
         }
     }// fim da classe
 }// fim do projeto 
