@@ -41,8 +41,31 @@ namespace CalculadoraForms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            maskedTextBox1.Text = "" + this.modelo.Dividir(Convert.ToDouble(maskedTextBox1.Text));
+            maskedTextBox1.Text = "" + this.modelo.Dividir(Convert.ToDouble(maskedTextBox1.Text));  
 
         }//Divisão
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            maskedTextBox1.Text = "" + this.modelo.Multiplicar(Convert.ToDouble(maskedTextBox1.Text));
+
+        }// Multiplicação
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            maskedTextBox1.Text = "" + this.modelo.Potencia(Convert.ToDouble(maskedTextBox1.Text));
+
+        }// Potenca
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            maskedTextBox1.Text = "" + this.modelo.Raiz(Convert.ToDouble(maskedTextBox1.Text));
+
+        }// Raiz
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

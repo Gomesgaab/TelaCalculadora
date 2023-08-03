@@ -26,14 +26,45 @@ namespace CalculadoraForms
 
         public double Subtrair(double num)
         {
+            if (ConsultarOperacao <= 0)
+            {
+                return ConsultarOperacao = num;
+            }
             return ConsultarOperacao -= num;
         }//fim do somar
 
         public double Dividir(double num)
-        {                       
-              return ConsultarOperacao /= num;            
-
+        {
+            if (ConsultarOperacao <= 0)
+            {
+               return  ConsultarOperacao = num;
+            }
+             return ConsultarOperacao /= num;
         }// fim divisão
 
+        public double Multiplicar(double num)
+        {
+            if (ConsultarOperacao <= 0)
+            {
+                return ConsultarOperacao = num;
+            }
+                return ConsultarOperacao *= num;
+        }//fim do método multiplicar
+
+        public double Potencia(double num)
+        {
+            if (ConsultarOperacao <= 0)
+            {
+                return ConsultarOperacao = num;
+            }
+            return Math.Pow(ConsultarOperacao, num);
+        }//fim da potência
+
+        public double Raiz(double num)
+        {
+            
+            return Math.Sqrt(num); 
+
+        }//fim do método raiz
     }// fim da classe
 }// fim do projeto 
