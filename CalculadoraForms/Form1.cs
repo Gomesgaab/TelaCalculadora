@@ -66,6 +66,12 @@ namespace CalculadoraForms
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
+        }// tela
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            maskedTextBox1.Text = "" + this.modelo.Limpa(Convert.ToDouble(maskedTextBox1.Text));
+
+        }// limpar
     }
 }

@@ -62,9 +62,15 @@ namespace CalculadoraForms
 
         public double Raiz(double num)
         {
-            
+            ConsultarOperacao = Math.Sqrt(num);
             return Math.Sqrt(num); 
 
         }//fim do método raiz
+
+        public double Limpa(double num) 
+        {
+
+            return 0;
+        }
     }// fim da classe
 }// fim do projeto 
